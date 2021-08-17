@@ -16,7 +16,7 @@ return message.channel.send(`**:x: Please do not ping anyone!**`);
  }
   message.channel.startTyping();
 if (!message.content) return message.channel.send("Please say something.");
-fetch(`https://api.affiliateplus.xyz/api/chatbot?message=${encodeURIComponent(message.content)}&botname=${client.user.username}&ownername=DEVELOPER_NAME`)
+fetch(`https://api.affiliateplus.xyz/api/chatbot?message=${encodeURIComponent(message.content)}&botname=${client.user.username}&ownername=Biraj`)
     .then(res => res.json())
     .then(data => {
         message.channel.send(`${data.message}`);
